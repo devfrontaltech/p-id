@@ -1,0 +1,91 @@
+{
+  "chipRegistrado": true,
+  "nombre": "Rocky",
+  "raza": "Golden Retriever",
+  "genero": "Macho",
+  "peso": 28,
+  "anos": 3,
+  "poblacion": "Barcelona",
+  "estadoSanitario": "Al día",
+
+  "fotoPrincipal": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80",
+
+  "veterinario": {
+    "nombre": "Clínica Vidal",
+    "telefono": "93 412 88 00"
+  },
+
+  "microchip": {
+    "numero": "724 0000 84571293",
+    "codigo": "724 0000<br>84571293",
+    "fechaRegistro": "2022"
+  },
+
+  "alimentacion": [
+    {
+      "nombre": "Pienso premium",
+      "detalle": "300g · 2 veces/día"
+    },
+    {
+      "nombre": "Pollo cocido",
+      "detalle": "100g · cena"
+    },
+    {
+      "nombre": "Zanahoria",
+      "detalle": "De snack"
+    },
+    {
+      "nombre": "Agua fresca",
+      "detalle": "Siempre disponible"
+    }
+  ],
+
+  "alergias": [
+    {
+      "nombre": "Gluten / Trigo",
+      "descripcion": "Evitar piensos con gluten"
+    },
+    {
+      "nombre": "Pescado azul",
+      "descripcion": "Reacción cutánea leve"
+    },
+    {
+      "nombre": "Cebolla & Ajo",
+      "descripcion": "Tóxico para perros — prohibido"
+    }
+  ],
+
+  "vacunas": [
+    {
+      "nombre": "Rabia",
+      "fecha": "Mar 2024",
+      "proxima": "Mar 2025",
+      "estado": "done"
+    },
+    {
+      "nombre": "Moquillo + Parvo",
+      "fecha": "Ene 2024",
+      "proxima": "Ene 2025",
+      "estado": "done"
+    },
+    {
+      "nombre": "Leishmaniosis",
+      "fecha": "Pendiente",
+      "proxima": "Jun 2025",
+      "estado": "pending"
+    }
+  ],
+
+  "ubicacion": {
+    "mapsEmbed": "https://www.google.com/maps?q=Carrer+de+Proven%C3%A7a+247,+Barcelona&output=embed",
+    "direccion": "Carrer de Provença 247, 3º 2ª",
+    "direccionSecundaria": "08008 Barcelona, Eixample"
+  },
+
+  "notasEspeciales": "Rocky es muy sociable y le encantan los niños 🧡 Si lo encontráis perdido, por favor llamad al número de WhatsApp. No le deis comida sin consultarlo antes por sus alergias. Responde bien a su nombre y a la palabra \"ven aquí\".",
+
+  "whatsapp": {
+    "telefono": "34600123456",
+    "mensaje": "Hola! He encontrado a Rocky 🐾"
+  }
+}
