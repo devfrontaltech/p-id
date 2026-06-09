@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rocky 🐾</title>
+<title>🐾</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -464,205 +464,199 @@
 </head>
 <body>
 
-<!-- HERO -->
+<!-- Elementos que se rellenan con JS -->
 <div class="hero">
-  <img class="hero-img"
-    src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80"
-    alt="Rocky el perro"
-  >
+  <img class="hero-img" id="hero-img" src="" alt="">
   <div class="hero-overlay"></div>
   <div class="paw-top">🐾</div>
-  <div class="hero-badge">✓ Chip registrado</div>
+  <div class="hero-badge" id="hero-badge"></div>
   <div class="hero-info">
-    <div class="hero-name">Rocky</div>
-    <div class="hero-sub">Golden Retriever · Macho</div>
-    <div class="hero-chips">
-      <span class="chip">🎂 3 años</span>
-      <span class="chip">📍 Barcelona</span>
-      <span class="chip">⚕️ Al día</span>
-    </div>
+    <div class="hero-name" id="hero-name"></div>
+    <div class="hero-sub" id="hero-sub"></div>
+    <div class="hero-chips" id="hero-chips"></div>
   </div>
 </div>
 
-<!-- CONTENT -->
 <div class="content">
 
-  <!-- STATS -->
-  <div class="stats-strip">
-    <div class="stat-item">
-      <div class="stat-val">28<span style="font-size:14px">kg</span></div>
-      <div class="stat-label">Peso</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-val">3</div>
-      <div class="stat-label">Años</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-val">♂</div>
-      <div class="stat-label">Macho</div>
-    </div>
-  </div>
+  <div class="stats-strip" id="stats-strip"></div>
 
-  <!-- INFO ROW -->
   <div class="info-row" style="margin-bottom:12px">
     <div class="info-mini">
       <div class="info-mini-label">🏥 Veterinario</div>
-      <div class="info-mini-val">Clínica<br>Vidal</div>
-      <div class="info-mini-sub">☎ 93 412 88 00</div>
+      <div class="info-mini-val" id="vet-nombre"></div>
+      <div class="info-mini-sub" id="vet-telefono"></div>
     </div>
     <div class="info-mini">
       <div class="info-mini-label">🔖 Microchip</div>
-      <div class="info-mini-val" style="font-size:13px;letter-spacing:-0.5px">724 0000<br>84571293</div>
-      <div class="info-mini-sub">Registrado 2022</div>
+      <div class="info-mini-val" id="chip-numero" style="font-size:13px;letter-spacing:-0.5px"></div>
+      <div class="info-mini-sub" id="chip-fecha"></div>
     </div>
   </div>
 
-  <!-- COMIDA -->
   <div class="card">
     <div class="card-title">
       <div class="card-title-icon" style="background:#DCE9DC">🍖</div>
       Alimentación diaria
     </div>
-    <div class="food-grid">
-      <div class="food-item">
-        <div class="food-item-icon">🥣</div>
-        <div class="food-item-name">Pienso premium</div>
-        <div class="food-item-detail">300g · 2 veces/día</div>
-      </div>
-      <div class="food-item">
-        <div class="food-item-icon">🥩</div>
-        <div class="food-item-name">Pollo cocido</div>
-        <div class="food-item-detail">100g · cena</div>
-      </div>
-      <div class="food-item">
-        <div class="food-item-icon">🥕</div>
-        <div class="food-item-name">Zanahoria</div>
-        <div class="food-item-detail">De snack</div>
-      </div>
-      <div class="food-item">
-        <div class="food-item-icon">💧</div>
-        <div class="food-item-name">Agua fresca</div>
-        <div class="food-item-detail">Siempre disponible</div>
-      </div>
-    </div>
+    <div class="food-grid" id="food-grid"></div>
   </div>
 
-  <!-- ALERGIAS -->
   <div class="card">
     <div class="card-title">
       <div class="card-title-icon" style="background:#FFE8E0">⚠️</div>
       Alergias conocidas
     </div>
-    <div class="allergy-list">
-      <div class="allergy-item">
-        <div class="allergy-icon">🌾</div>
-        <div>
-          <div class="allergy-text">Gluten / Trigo</div>
-          <div class="allergy-sub">Evitar piensos con gluten</div>
-        </div>
-      </div>
-      <div class="allergy-item">
-        <div class="allergy-icon">🐟</div>
-        <div>
-          <div class="allergy-text">Pescado azul</div>
-          <div class="allergy-sub">Reacción cutánea leve</div>
-        </div>
-      </div>
-      <div class="allergy-item">
-        <div class="allergy-icon">🧅</div>
-        <div>
-          <div class="allergy-text">Cebolla & Ajo</div>
-          <div class="allergy-sub">Tóxico para perros — prohibido</div>
-        </div>
-      </div>
-    </div>
+    <div class="allergy-list" id="allergy-list"></div>
   </div>
 
-  <!-- VACUNAS -->
   <div class="card">
     <div class="card-title">
       <div class="card-title-icon" style="background:#DCE9DC">💉</div>
       Calendario vacunal
     </div>
-    <div class="vaccine-list">
-      <div class="vaccine-item">
-        <div class="vaccine-dot done">✓</div>
-        <div style="flex:1">
-          <div class="vaccine-name">Rabia</div>
-          <div class="vaccine-date">Mar 2024 · próx. Mar 2025</div>
-        </div>
-        <span class="vaccine-status done">Al día</span>
-      </div>
-      <div class="vaccine-item">
-        <div class="vaccine-dot done">✓</div>
-        <div style="flex:1">
-          <div class="vaccine-name">Moquillo + Parvo</div>
-          <div class="vaccine-date">Ene 2024 · próx. Ene 2025</div>
-        </div>
-        <span class="vaccine-status done">Al día</span>
-      </div>
-      <div class="vaccine-item">
-        <div class="vaccine-dot pending">!</div>
-        <div style="flex:1">
-          <div class="vaccine-name">Leishmaniosis</div>
-          <div class="vaccine-date">Pendiente · Jun 2025</div>
-        </div>
-        <span class="vaccine-status pending">Pendiente</span>
-      </div>
-    </div>
+    <div class="vaccine-list" id="vaccine-list"></div>
   </div>
 
-  <!-- UBICACIÓN -->
   <div class="card">
     <div class="card-title">
       <div class="card-title-icon" style="background:#EDD9C4">📍</div>
-      Casa de Rocky
+      Casa de <span id="loc-name"></span>
     </div>
     <div class="location-map">
-      <iframe
-        src="https://www.google.com/maps?q=Carrer+de+Proven%C3%A7a+247,+Barcelona&output=embed"
-        allowfullscreen
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Ubicación de Rocky"
-      ></iframe>
+      <iframe id="map-iframe" src="" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación"></iframe>
     </div>
     <div class="location-address">
       <div class="location-icon">🏡</div>
       <div class="location-text">
-        <strong>Carrer de Provença 247, 3º 2ª</strong>
-        <span>08008 Barcelona, Eixample</span>
+        <strong id="loc-direccion"></strong>
+        <span id="loc-secundaria"></span>
       </div>
     </div>
   </div>
 
-  <!-- NOTAS -->
   <div class="card" style="background: #FFF8EC; border: 1px solid #F5E4B8;">
     <div class="card-title" style="margin-bottom:10px">
       <div class="card-title-icon" style="background:#F5E4B8">📝</div>
       Notas especiales
     </div>
-    <p style="font-size:14px; color:var(--text-main); line-height:1.7">
-      Rocky es muy sociable y le encantan los niños 🧡 Si lo encontráis perdido, por favor llamad al número de WhatsApp. <strong>No le deis comida</strong> sin consultarlo antes por sus alergias. Responde bien a su nombre y a la palabra <em>"ven aquí"</em>.
-    </p>
+    <p id="notas" style="font-size:14px; color:var(--text-main); line-height:1.7"></p>
   </div>
 
 </div>
 
-<!-- FOOTER -->
 <div class="footer">
-  Hecho con 🐾 para <span>Rocky</span>
+  Hecho con 🐾 para <span id="footer-nombre"></span>
 </div>
 
-<!-- BOTÓN WHATSAPP FLOTANTE -->
 <div class="btn-whatsapp-wrapper">
-  <a class="btn-whatsapp" href="https://wa.me/34600123456?text=Hola!%20He%20encontrado%20a%20Rocky%20🐾" target="_blank">
+  <a class="btn-whatsapp" id="btn-whatsapp" href="#" target="_blank">
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
     </svg>
     Contactar por WhatsApp
   </a>
 </div>
+
+<script>
+  const FOOD_ICONS = ['🥣','🥩','🥕','💧','🍗','🦴','🫐','🥚'];
+  const ALLERGY_ICONS = ['🌾','🐟','🧅','🥜','🍫','🥛','🍓','⚠️'];
+
+  fetch('perro.json')
+    .then(r => r.json())
+    .then(d => {
+      document.title = d.nombre + ' 🐾';
+
+      // HERO
+      document.getElementById('hero-img').src = d.fotoPrincipal;
+      document.getElementById('hero-img').alt = d.nombre;
+      document.getElementById('hero-badge').textContent = d.chipRegistrado ? '✓ Chip registrado' : 'Sin chip';
+      document.getElementById('hero-name').textContent = d.nombre;
+      document.getElementById('hero-sub').textContent = d.raza + ' · ' + d.genero;
+
+      const chips = document.getElementById('hero-chips');
+      chips.innerHTML = `
+        <span class="chip">🎂 ${d.anos} año${d.anos !== 1 ? 's' : ''}</span>
+        <span class="chip">📍 ${d.poblacion}</span>
+        <span class="chip">⚕️ ${d.estadoSanitario}</span>
+      `;
+
+      // STATS
+      const genderSymbol = d.genero.toLowerCase().startsWith('m') ? '♂' : '♀';
+      document.getElementById('stats-strip').innerHTML = `
+        <div class="stat-item">
+          <div class="stat-val">${d.peso}<span style="font-size:14px">kg</span></div>
+          <div class="stat-label">Peso</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val">${d.anos}</div>
+          <div class="stat-label">Años</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val">${genderSymbol}</div>
+          <div class="stat-label">${d.genero}</div>
+        </div>
+      `;
+
+      // VET & CHIP
+      document.getElementById('vet-nombre').innerHTML = d.veterinario.nombre.replace(' ', '<br>');
+      document.getElementById('vet-telefono').textContent = '☎ ' + d.veterinario.telefono;
+      document.getElementById('chip-numero').innerHTML = d.microchip.codigo;
+      document.getElementById('chip-fecha').textContent = 'Registrado ' + d.microchip.fechaRegistro;
+
+      // COMIDA
+      const foodGrid = document.getElementById('food-grid');
+      foodGrid.innerHTML = d.alimentacion.map((f, i) => `
+        <div class="food-item">
+          <div class="food-item-icon">${FOOD_ICONS[i % FOOD_ICONS.length]}</div>
+          <div class="food-item-name">${f.nombre}</div>
+          <div class="food-item-detail">${f.detalle}</div>
+        </div>
+      `).join('');
+
+      // ALERGIAS
+      const allergyList = document.getElementById('allergy-list');
+      allergyList.innerHTML = d.alergias.map((a, i) => `
+        <div class="allergy-item">
+          <div class="allergy-icon">${ALLERGY_ICONS[i % ALLERGY_ICONS.length]}</div>
+          <div>
+            <div class="allergy-text">${a.nombre}</div>
+            <div class="allergy-sub">${a.descripcion}</div>
+          </div>
+        </div>
+      `).join('');
+
+      // VACUNAS
+      const vaccineList = document.getElementById('vaccine-list');
+      vaccineList.innerHTML = d.vacunas.map(v => `
+        <div class="vaccine-item">
+          <div class="vaccine-dot ${v.estado}">${v.estado === 'done' ? '✓' : '!'}</div>
+          <div style="flex:1">
+            <div class="vaccine-name">${v.nombre}</div>
+            <div class="vaccine-date">${v.fecha} · próx. ${v.proxima}</div>
+          </div>
+          <span class="vaccine-status ${v.estado}">${v.estado === 'done' ? 'Al día' : 'Pendiente'}</span>
+        </div>
+      `).join('');
+
+      // UBICACIÓN
+      document.getElementById('loc-name').textContent = d.nombre;
+      document.getElementById('map-iframe').src = d.ubicacion.mapsEmbed;
+      document.getElementById('loc-direccion').textContent = d.ubicacion.direccion;
+      document.getElementById('loc-secundaria').textContent = d.ubicacion.direccionSecundaria;
+
+      // NOTAS
+      document.getElementById('notas').textContent = d.notasEspeciales;
+
+      // FOOTER
+      document.getElementById('footer-nombre').textContent = d.nombre;
+
+      // WHATSAPP
+      const msg = encodeURIComponent(d.whatsapp.mensaje);
+      document.getElementById('btn-whatsapp').href = `https://wa.me/${d.whatsapp.telefono}?text=${msg}`;
+    })
+    .catch(err => console.error('Error cargando perro.json:', err));
+</script>
 
 </body>
 </html>
